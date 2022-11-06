@@ -21,6 +21,7 @@ import {
   FormHelperText,
   InputRightElement,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 import { useToast } from "@chakra-ui/react";
 
@@ -74,12 +75,31 @@ const Form1 = () => {
 };
 
 const Form2 = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
   return (
     <>
       <Heading w="100%" textAlign={"center"} fontWeight="normal" mb="2%">
-        User Details
+        Details
       </Heading>
       <FormControl as={GridItem} colSpan={[6, 3]}>
+        <div>
+          <FormLabel
+            htmlFor="country"
+            fontSize="sm"
+            fontWeight="md"
+            color="gray.700"
+            _dark={{
+              color: "gray.50",
+            }}
+          >
+            Start Date
+          </FormLabel>
+          <DatePicker
+            value={startDate}
+            onChange={(date: Date) => setStartDate(startDate)}
+          />
+        </div>
         <FormLabel
           htmlFor="country"
           fontSize="sm"
@@ -89,25 +109,13 @@ const Form2 = () => {
             color: "gray.50",
           }}
         >
-          Country / Region
+          End Date
         </FormLabel>
-        <Select
-          id="country"
-          name="country"
-          autoComplete="country"
-          placeholder="Select option"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        >
-          <option>United States</option>
-          <option>Canada</option>
-          <option>Mexico</option>
-        </Select>
+        {/* <DatePicker
+          value={event}
+          onChange={(date: Date) => setEndDate(event)}
+        /> */}
       </FormControl>
-
       <FormControl as={GridItem} colSpan={6}>
         <FormLabel
           htmlFor="street_address"
@@ -286,6 +294,15 @@ export default function Multistep() {
   const toast = useToast();
   const [step, setStep] = useState(1);
   const [progress, setProgress] = useState(33.33);
+  const submit = () => {
+    toast({
+      title: "Agreement created.",
+      description: "We've created your agreement for you!",
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+    });
+  };
   return (
     <>
       <Box
@@ -343,15 +360,7 @@ export default function Multistep() {
                 w="7rem"
                 colorScheme="red"
                 variant="solid"
-                onClick={() => {
-                  toast({
-                    title: "Agreement created.",
-                    description: "We've created your agreement for you!",
-                    status: "success",
-                    duration: 3000,
-                    isClosable: true,
-                  });
-                }}
+                onClick={() => submit()}
               >
                 Submit
               </Button>

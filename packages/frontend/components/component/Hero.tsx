@@ -23,15 +23,13 @@ export default function Hero() {
           fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
           lineHeight={"110%"}
         >
-          Meeting scheduling{" "}
+          we help you stay{" "}
           <Text as={"span"} color={"orange.400"}>
-            made easy
+            onTrack
           </Text>
         </Heading>
         <Text color={"gray.500"} maxW={"3xl"}>
-          Never miss a meeting. Never be late for one too. Keep track of your
-          meetings and receive smart reminders in appropriate times. Read your
-          smart “Daily Agenda” every morning.
+          Accountability platform backed by defi staking protocol
         </Text>
         <Stack spacing={6} direction={"row"}>
           <Button
