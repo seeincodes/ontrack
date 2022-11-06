@@ -4,7 +4,6 @@ import {
   chainNameType,
   SubscribedModal,
 } from "@pushprotocol/uiweb";
-import styled from "styled-components";
 import * as PushAPI from "@pushprotocol/restapi";
 import { createContext } from "react";
 import { getCAIPAddress } from "../components/component/caipaddress";
@@ -54,25 +53,16 @@ const NotificationsTest = () => {
       setLoading(false);
     }
   }, [account, env, isCAIP]);
-  const notifications = await PushAPI.user.getFeeds({
+
+  const notifications = PushAPI.user.getFeeds({
     user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // user address in CAIP
     env: "staging",
   });
 
-  const NotificationListContainer = styled.div`
-    margin: 20px;
-    padding: 20px;
-    width: 100%;
-    @media (max-width: 600px) {
-      margin: 0;
-      padding: 0;
-    }
-  `;
-
   return (
-    <SectionItem>
+    <div>
       {notifs ? (
-        <NotificationListContainer>
+        <div>
           {notifs.map((oneNotification, i) => {
             const {
               cta,
@@ -85,7 +75,6 @@ const NotificationsTest = () => {
               blockchain,
               secret,
               notification,
-              theme,
             } = oneNotification;
 
             return (
@@ -103,8 +92,8 @@ const NotificationsTest = () => {
               />
             );
           })}
-        </NotificationListContainer>
+        </div>
       ) : null}
-    </SectionItem>
+    </div>
   );
 };
