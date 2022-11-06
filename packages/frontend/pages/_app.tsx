@@ -5,7 +5,7 @@ import "../styles/globals.css";
 
 import { ChakraProvider } from "@chakra-ui/react";
 
-import { chain, createClient, WagmiConfig, configureChains } from "wagmi";
+import { chain, createClient, WagmiConfig, configureChains, chainId } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -38,7 +38,7 @@ const hardhatChain: Chain = {
 };
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, hardhatChain],
+  [chain.goerli, chain.polygonMumbai, chain.optimismGoerli],
   [
     alchemyProvider({ apiKey: process.env.REACT_APP_ALCHEMY_ID }),
     publicProvider(),
