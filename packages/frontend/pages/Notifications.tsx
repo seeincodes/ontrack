@@ -1,4 +1,4 @@
-import { useState, useContext, useCallback } from "react";
+import { useEffect, useState, useContext, useCallback } from "react";
 import {
   NotificationItem,
   chainNameType,
@@ -29,10 +29,7 @@ const NotificationsTest = () => {
   const { env, isCAIP } = useContext<any>(EnvContext);
   const [isLoading, setLoading] = useState(false);
   const [notifs, setNotifs] = useState<PushAPI.ParsedResponseType[]>();
-  const [spams, setSpams] = useState<PushAPI.ParsedResponseType[]>();
   const [theme, setTheme] = useState("dark");
-  const [viewType, setViewType] = useState("notif");
-  const [showSubscribe, setShowSubscribe] = useState(false);
 
   const loadNotifications = useCallback(async () => {
     try {
@@ -58,6 +55,12 @@ const NotificationsTest = () => {
     user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // user address in CAIP
     env: "staging",
   });
+
+  useEffect(() => {
+    if (account) {
+      loadNotifications();
+    }
+  }, [account, loadNotifications]);
 
   return (
     <div>
