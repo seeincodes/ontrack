@@ -22,7 +22,7 @@ Your money is working for you while you are working towards your goals. The amou
 
 #### Polygon 
 Polygon is the leading platform for Ethereum scaling and infrastructure development.
-For our applications process, we are deploying our smart contracts on Polygon as it offers scaling and infrastructure support to Ethereum decentralized applications (dApps) and is not plagued by the high transaction fees and network congestion that impacts the Ethereum network.
+For our applications process, we are deploying our smart contracts on Polygon as it offers scaling and infrastructure support to Ethereum decentralized applications (dApps) and is not plagued by the high transaction fees and network congestion that impacts the Ethereum network. https://mumbai.polygonscan.com/address/0x2134ad000311c150146eed3e9149fc22d0815dba
 
 #### Optimism
 **Optimism** We wanted to make our platform multichain, and at onTrack we are super optimistic about open source contributions and builders communities.
@@ -41,7 +41,7 @@ Optimism deployment of contract on goerli (https://goerli.etherscan.io/tx/0x5a7b
 
 #### 0x Protocol
 **0x Protocol** an open-source, decentralized exchange protocol that serves as the global backbone of 0x, trusted exchange infrastructure for the internet. 
-We have used **0x Swap API**  to convert ApeCoin which is our staking token into a Stablecoin. That allowed us to provide aggregated liquidity to our users. https://mumbai.polygonscan.com/address/0x2134ad000311c150146eed3e9149fc22d0815dba
+We have used **0x Swap API**  to convert ApeCoin which is our staking token into a Stablecoin. That allowed us to provide aggregated liquidity to our users. 
 
 
 #### WorldCoin
