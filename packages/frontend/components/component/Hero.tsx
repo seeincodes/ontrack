@@ -42,20 +42,6 @@ export default function Hero() {
           Our aim is to empower you to take control of your accomplishments
           while having the support and inspiration from your buddies.
         </Text>
-        <Stack spacing={6} direction={"row"}>
-          <Button
-            rounded={"full"}
-            px={6}
-            colorScheme={"orange"}
-            bg={"orange.400"}
-            _hover={{ bg: "orange.500" }}
-          >
-            Get started
-          </Button>
-          <Button rounded={"full"} px={6}>
-            Learn more
-          </Button>
-        </Stack>
         <Flex w={"full"}>
           <img
             style={{
@@ -63,7 +49,7 @@ export default function Hero() {
               paddingLeft: "2em",
               margin: "auto",
               padding: "0",
-              marginTop: "0",
+              marginTop: "-30px",
             }}
             src={landing.src}
           />

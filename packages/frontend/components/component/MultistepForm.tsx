@@ -22,6 +22,7 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import router from "next/router";
+import Vault from "../../pages/vault/vault";
 
 import { useToast } from "@chakra-ui/react";
 
@@ -182,6 +183,7 @@ export default function Multistep() {
       isClosable: true,
     });
     router.push("/");
+    Vault();
   };
   return (
     <>
@@ -193,9 +195,10 @@ export default function Multistep() {
         p={6}
         m="10px auto"
         as="form"
-        backgroundColor="#B0CCC0"
+        background="linear-gradient(85deg, #FFEEE6 5%, #B2B0CC 35%, #B0CCC0 45%)"
       >
         <Progress
+          colorScheme="whiteAlpha"
           hasStripe
           value={progress}
           mb="5%"
