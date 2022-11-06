@@ -183,7 +183,7 @@ export default function Multistep() {
       isClosable: true,
     });
     router.push("/");
-    Vault();
+    Vault("test");
   };
   return (
     <>
