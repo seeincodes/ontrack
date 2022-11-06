@@ -16,6 +16,8 @@ import {
 import {} from "@chakra-ui/react";
 import router from "next/router";
 import buddy from "../../public/buddy.jpg";
+import graph from "../../public/graph.jpg";
+import pinkies from "../../public/pinkies.jpg";
 
 const WorldIDWidget = dynamic<WidgetProps>(
   () => import("@worldcoin/id").then((mod) => mod.WorldIDWidget),
@@ -75,21 +77,42 @@ export default function Profile() {
                     Welcome, Justina!
                   </chakra.h2>
                   <Button
-                    colorScheme="green"
+                    backgroundColor="#B0CCC0"
                     size="md"
                     onClick={() => router.push("Form")}
                   >
-                    Make a new agreement +
+                    Make a new contract +
                   </Button>
                 </VStack>
               </GridItem>
               <GridItem>
-                <Flex>
+                <Flex
+                  style={{
+                    backgroundColor: "white",
+                    borderRadius: "1rem",
+                    padding: "20px",
+                  }}
+                >
                   <chakra.p>
-                    Provide your customers a story they would enjoy keeping in
-                    mind the objectives of your website. Pay special attention
-                    to the tone of voice.
+                    <h1
+                      style={{
+                        fontFamily: "'Montserrat', sans-serif",
+                        fontWeight: "700",
+                      }}
+                    >
+                      Current Contracts
+                    </h1>
+                    <p style={{ paddingTop: "1rem" }}>
+                      Run 5x a week <br /> for 2 months
+                    </p>
                   </chakra.p>
+                  <img
+                    style={{
+                      height: "8em",
+                      borderRadius: "100%",
+                    }}
+                    src={graph.src}
+                  />
                 </Flex>
               </GridItem>
             </Grid>
@@ -112,27 +135,19 @@ export default function Profile() {
             >
               <img
                 style={{
-                  height: "4em",
-                  paddingLeft: "4rem",
-                  borderRadius: "50%",
+                  height: "8em",
+
+                  borderRadius: "100%",
                 }}
                 src={buddy.src}
               />
               <img
                 style={{
-                  height: "4em",
-                  paddingLeft: "4rem",
-                  borderRadius: "50%",
+                  height: "8em",
+
+                  borderRadius: "100%",
                 }}
-                src={buddy.src}
-              />
-              <Feature
-                heading={"Third Feature"}
-                text={"Short text describing one of you features/service"}
-              />
-              <Feature
-                heading={"Fourth Feature"}
-                text={"Short text describing one of you features/service"}
+                src={pinkies.src}
               />
             </Grid>
           </Box>
