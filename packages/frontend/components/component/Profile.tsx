@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import {} from "@chakra-ui/react";
 import router from "next/router";
+import buddy from "../../public/buddy.jpg";
 
 const WorldIDWidget = dynamic<WidgetProps>(
   () => import("@worldcoin/id").then((mod) => mod.WorldIDWidget),
@@ -93,6 +94,14 @@ export default function Profile() {
               </GridItem>
             </Grid>
             <Divider mt={12} mb={12} />
+            <h1
+              style={{
+                fontFamily: "'Montserrat', sans-serif",
+                fontWeight: "700",
+              }}
+            >
+              Completed Badges
+            </h1>
             <Grid
               templateColumns={{
                 base: "repeat(1, 1fr)",
@@ -101,13 +110,21 @@ export default function Profile() {
               }}
               gap={{ base: "8", sm: "12", md: "16" }}
             >
-              <Feature
-                heading={"First Feature"}
-                text={"Short text describing one of you features/service"}
+              <img
+                style={{
+                  height: "4em",
+                  paddingLeft: "4rem",
+                  borderRadius: "50%",
+                }}
+                src={buddy.src}
               />
-              <Feature
-                heading={"Second Feature"}
-                text={"Short text describing one of you features/service"}
+              <img
+                style={{
+                  height: "4em",
+                  paddingLeft: "4rem",
+                  borderRadius: "50%",
+                }}
+                src={buddy.src}
               />
               <Feature
                 heading={"Third Feature"}

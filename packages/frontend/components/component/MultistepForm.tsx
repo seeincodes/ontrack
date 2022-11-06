@@ -21,7 +21,7 @@ import {
   FormHelperText,
   InputRightElement,
 } from "@chakra-ui/react";
-import Link from "next/link";
+import router from "next/router";
 
 import { useToast } from "@chakra-ui/react";
 
@@ -30,19 +30,22 @@ const Form1 = () => {
   const handleClick = () => setShow(!show);
   return (
     <>
-      <Heading w="100%" textAlign={"center"} fontWeight="normal" mb="2%">
+      <Heading
+        w="100%"
+        textAlign={"center"}
+        fontWeight="normal"
+        mb="2%"
+        fontFamily="Montserrat"
+      >
         Contract Creation
       </Heading>
       <Flex>
-        {/* <FormControl mr="5%">
-          <FormLabel htmlFor="first-name" fontWeight={"normal"}>
-            First name
-          </FormLabel>
-          <Input id="first-name" placeholder="First name" />
-        </FormControl> */}
-
         <FormControl>
-          <FormLabel htmlFor="name" fontWeight={"normal"}>
+          <FormLabel
+            htmlFor="name"
+            fontWeight={"normal"}
+            fontFamily="Montserrat"
+          >
             Name
           </FormLabel>
           <Input id="name" placeholder="Name" />
@@ -54,7 +57,12 @@ const Form1 = () => {
       </FormControl>
 
       <FormControl>
-        <FormLabel htmlFor="password" fontWeight={"normal"} mt="2%">
+        <FormLabel
+          htmlFor="password"
+          fontWeight={"normal"}
+          mt="2%"
+          fontFamily="Montserrat"
+        >
           Password
         </FormLabel>
         <InputGroup size="md">
@@ -75,31 +83,20 @@ const Form1 = () => {
 };
 
 const Form2 = () => {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const [startValue, startOnChange] = useState(new Date());
+  const [endValue, endOnChange] = useState(new Date());
   return (
     <>
-      <Heading w="100%" textAlign={"center"} fontWeight="normal" mb="2%">
+      <Heading
+        w="100%"
+        textAlign={"center"}
+        fontWeight="normal"
+        mb="2%"
+        fontFamily="Montserrat"
+      >
         Details
       </Heading>
       <FormControl as={GridItem} colSpan={[6, 3]}>
-        <div>
-          <FormLabel
-            htmlFor="country"
-            fontSize="sm"
-            fontWeight="md"
-            color="gray.700"
-            _dark={{
-              color: "gray.50",
-            }}
-          >
-            Start Date
-          </FormLabel>
-          <DatePicker
-            value={startDate}
-            onChange={(date: Date) => setStartDate(startDate)}
-          />
-        </div>
         <FormLabel
           htmlFor="country"
           fontSize="sm"
@@ -108,13 +105,25 @@ const Form2 = () => {
           _dark={{
             color: "gray.50",
           }}
+          fontFamily="Montserrat"
+        >
+          Start Date
+        </FormLabel>
+        <DatePicker onChange={startOnChange} value={startValue} />
+
+        <FormLabel
+          htmlFor="country"
+          fontSize="sm"
+          fontWeight="md"
+          color="gray.700"
+          _dark={{
+            color: "gray.50",
+          }}
+          fontFamily="Montserrat"
         >
           End Date
         </FormLabel>
-        {/* <DatePicker
-          value={event}
-          onChange={(date: Date) => setEndDate(event)}
-        /> */}
+        <DatePicker onChange={endOnChange} value={endValue} />
       </FormControl>
       <FormControl as={GridItem} colSpan={6}>
         <FormLabel
@@ -126,6 +135,7 @@ const Form2 = () => {
             color: "gray.50",
           }}
           mt="2%"
+          fontFamily="Montserrat"
         >
           Street address
         </FormLabel>
@@ -152,6 +162,7 @@ const Form2 = () => {
             color: "gray.50",
           }}
           mt="2%"
+          fontFamily="Montserrat"
         >
           City
         </FormLabel>
@@ -178,6 +189,7 @@ const Form2 = () => {
             color: "gray.50",
           }}
           mt="2%"
+          fontFamily="Montserrat"
         >
           State / Province
         </FormLabel>
@@ -204,6 +216,7 @@ const Form2 = () => {
             color: "gray.50",
           }}
           mt="2%"
+          fontFamily="Montserrat"
         >
           ZIP / Postal
         </FormLabel>
@@ -226,7 +239,12 @@ const Form2 = () => {
 const Form3 = () => {
   return (
     <>
-      <Heading w="100%" textAlign={"center"} fontWeight="normal">
+      <Heading
+        w="100%"
+        textAlign={"center"}
+        fontWeight="normal"
+        fontFamily="Montserrat"
+      >
         Social Handles
       </Heading>
       <SimpleGrid columns={1} spacing={6}>
@@ -238,6 +256,7 @@ const Form3 = () => {
             _dark={{
               color: "gray.50",
             }}
+            fontFamily="Montserrat"
           >
             Website
           </FormLabel>
@@ -302,6 +321,7 @@ export default function Multistep() {
       duration: 3000,
       isClosable: true,
     });
+    router.push("/");
   };
   return (
     <>
@@ -313,6 +333,7 @@ export default function Multistep() {
         p={6}
         m="10px auto"
         as="form"
+        backgroundColor="#B0CCC0"
       >
         <Progress
           hasStripe

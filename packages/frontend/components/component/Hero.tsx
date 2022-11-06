@@ -22,13 +22,18 @@ export default function Hero() {
           fontWeight={600}
           fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
           lineHeight={"110%"}
+          fontFamily="'Montserrat', sans-serif"
         >
           we help you stay{" "}
-          <Text as={"span"} color={"orange.400"}>
+          <Text
+            as={"span"}
+            color={"orange.400"}
+            fontFamily="'Montserrat', sans-serif"
+          >
             onTrack
           </Text>
         </Heading>
-        <Text color={"gray.500"} maxW={"3xl"}>
+        <Text color={"gray.500"} maxW={"3xl"} fontFamily="'Mina', sans-serif">
           Accountability platform backed by defi staking protocol
         </Text>
         <Stack spacing={6} direction={"row"}>
