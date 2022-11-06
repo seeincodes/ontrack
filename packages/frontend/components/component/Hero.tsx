@@ -35,12 +35,10 @@ export default function Hero() {
           </Text>
         </Heading>
         <Text color={"gray.500"} maxW={"3xl"} fontFamily="'Mina', sans-serif">
-          onTrack is an incentivized accountability platform where you can set
-          up your goals to help keep you and your friends motivated. The
-          platform is user-friendly and backed by the DeFi staking protocol.
-          <br />
-          Our aim is to empower you to take control of your accomplishments
-          while having the support and inspiration from your buddies.
+          onTrack is an incentive accountability app that can you and your
+          friends reach your goals! <br />
+          our simple platform empowers your goal setting by rewarding you for
+          completion.
         </Text>
         <Flex w={"full"}>
           <img
