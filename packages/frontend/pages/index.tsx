@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { GetGreeter, SetGreeter } from "../components/contract";
 import Navbar from "@/components/component/Navbar";
 import Hero from "@/components/component/Hero";
-import Profile from "@/components/component/Profile";
 import { useAccount } from "wagmi";
 import SidebarWithHeader from "@/components/component/Sidebar";
 
@@ -29,10 +26,7 @@ export default function Home() {
         }}
       >
         {isConnected ? (
-          <>
-            <SidebarWithHeader />
-            <Profile />
-          </>
+          <SidebarWithHeader />
         ) : (
           <>
             <Navbar />
