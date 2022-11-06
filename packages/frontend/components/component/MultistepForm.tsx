@@ -198,7 +198,7 @@ export default function Multistep() {
         background="linear-gradient(85deg, #FFEEE6 5%, #B2B0CC 35%, #B0CCC0 45%)"
       >
         <Progress
-          colorScheme="whiteAlpha"
+          colorScheme="gray"
           hasStripe
           value={progress}
           mb="5%"

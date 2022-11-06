@@ -40,7 +40,7 @@ export default function Navbar() {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         background={
-          "linear-gradient(70deg, #FFEEE6 5%, #FFBBBB 35%, #A9F1DF 45%)"
+          "linear-gradient(85deg, #FFEEE6 5%, #B2B0CC 35%, #B0CCC0 45%)"
         }
       >
         <Flex
