@@ -24,9 +24,11 @@ For our applications process, we are deploying our smart contracts on Polygon as
 
 #### Optimism
 **Optimism** We wanted to make our platform multichain, and at onTrack we are super optimistic about open source contributions and builders communities.
+https://optimistic.etherscan.io/address/0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8
 
 #### Gnosis Chain
-**Gnosis Chain** We have deployed smart contract on Gnosis Chain. To allow our users a multichain experience
+**Gnosis Chain** We have deployed smart contract on Gnosis Chain to allow our users a multichain experience.
+https://gnosisscan.io/address/0xd9145cce52d386f254917e481eb44e9943f39138
 
 #### ApeCoin
 **ApeCoin** is an ERC-20 governance and utility token for decentralized communities building at the forefront of culture and web3. We have adopted ApeCoin as a staking token for our application  to give our users all the perks for ApeCoin holders.
