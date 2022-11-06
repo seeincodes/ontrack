@@ -53,30 +53,7 @@ const Form1 = () => {
       </Flex>
       <FormControl>
         <FormLabel>Description</FormLabel>
-        <Input placeholder="Describe what you are.. " />
-      </FormControl>
-
-      <FormControl>
-        <FormLabel
-          htmlFor="password"
-          fontWeight={"normal"}
-          mt="2%"
-          fontFamily="Montserrat"
-        >
-          Password
-        </FormLabel>
-        <InputGroup size="md">
-          <Input
-            pr="4.5rem"
-            type={show ? "text" : "password"}
-            placeholder="Enter password"
-          />
-          <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
-              {show ? "Hide" : "Show"}
-            </Button>
-          </InputRightElement>
-        </InputGroup>
+        <Input placeholder="What's your goal?" />
       </FormControl>
     </>
   );
@@ -94,7 +71,7 @@ const Form2 = () => {
         mb="2%"
         fontFamily="Montserrat"
       >
-        Details
+        What's your timeline?
       </Heading>
       <FormControl as={GridItem} colSpan={[6, 3]}>
         <FormLabel
@@ -125,113 +102,6 @@ const Form2 = () => {
         </FormLabel>
         <DatePicker onChange={endOnChange} value={endValue} />
       </FormControl>
-      <FormControl as={GridItem} colSpan={6}>
-        <FormLabel
-          htmlFor="street_address"
-          fontSize="sm"
-          fontWeight="md"
-          color="gray.700"
-          _dark={{
-            color: "gray.50",
-          }}
-          mt="2%"
-          fontFamily="Montserrat"
-        >
-          Street address
-        </FormLabel>
-        <Input
-          type="text"
-          name="street_address"
-          id="street_address"
-          autoComplete="street-address"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
-      </FormControl>
-
-      <FormControl as={GridItem} colSpan={[6, 6, null, 2]}>
-        <FormLabel
-          htmlFor="city"
-          fontSize="sm"
-          fontWeight="md"
-          color="gray.700"
-          _dark={{
-            color: "gray.50",
-          }}
-          mt="2%"
-          fontFamily="Montserrat"
-        >
-          City
-        </FormLabel>
-        <Input
-          type="text"
-          name="city"
-          id="city"
-          autoComplete="city"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
-      </FormControl>
-
-      <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
-        <FormLabel
-          htmlFor="state"
-          fontSize="sm"
-          fontWeight="md"
-          color="gray.700"
-          _dark={{
-            color: "gray.50",
-          }}
-          mt="2%"
-          fontFamily="Montserrat"
-        >
-          State / Province
-        </FormLabel>
-        <Input
-          type="text"
-          name="state"
-          id="state"
-          autoComplete="state"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
-      </FormControl>
-
-      <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
-        <FormLabel
-          htmlFor="postal_code"
-          fontSize="sm"
-          fontWeight="md"
-          color="gray.700"
-          _dark={{
-            color: "gray.50",
-          }}
-          mt="2%"
-          fontFamily="Montserrat"
-        >
-          ZIP / Postal
-        </FormLabel>
-        <Input
-          type="text"
-          name="postal_code"
-          id="postal_code"
-          autoComplete="postal-code"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
-      </FormControl>
     </>
   );
 };
@@ -245,7 +115,7 @@ const Form3 = () => {
         fontWeight="normal"
         fontFamily="Montserrat"
       >
-        Social Handles
+        Details
       </Heading>
       <SimpleGrid columns={1} spacing={6}>
         <FormControl as={GridItem} colSpan={[3, 2]}>
@@ -258,22 +128,12 @@ const Form3 = () => {
             }}
             fontFamily="Montserrat"
           >
-            Website
+            What's your interest rate?
           </FormLabel>
           <InputGroup size="sm">
-            <InputLeftAddon
-              bg="gray.50"
-              _dark={{
-                bg: "gray.800",
-              }}
-              color="gray.500"
-              rounded="md"
-            >
-              http://
-            </InputLeftAddon>
             <Input
               type="tel"
-              placeholder="www.example.com"
+              placeholder="5-15%"
               focusBorderColor="brand.400"
               rounded="md"
             />
@@ -289,10 +149,10 @@ const Form3 = () => {
               color: "gray.50",
             }}
           >
-            About
+            Who is joining you?
           </FormLabel>
           <Textarea
-            placeholder="you@example.com"
+            placeholder="0x....."
             rows={3}
             shadow="sm"
             focusBorderColor="brand.400"
@@ -301,7 +161,7 @@ const Form3 = () => {
             }}
           />
           <FormHelperText>
-            Brief description for your profile. URLs are hyperlinked.
+            Add all the crypto addresses of the joining parties!
           </FormHelperText>
         </FormControl>
       </SimpleGrid>
@@ -379,7 +239,7 @@ export default function Multistep() {
             {step === 3 ? (
               <Button
                 w="7rem"
-                colorScheme="red"
+                colorScheme="teal"
                 variant="solid"
                 onClick={() => submit()}
               >
