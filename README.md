@@ -41,8 +41,6 @@ Optimism deployment of contract on goerli (https://goerli.etherscan.io/tx/0x5a7b
 **0x Protocol** an open-source, decentralized exchange protocol that serves as the global backbone of 0x, trusted exchange infrastructure for the internet. 
 We have used **0x Swap API**  to convert ApeCoin which is our staking token into a Stablecoin. That allowed us to provide aggregated liquidity to our users. https://mumbai.polygonscan.com/address/0x2134ad000311c150146eed3e9149fc22d0815dba
 
-#### Uniswap Foundation
-**Uniswap Foundation** is the leading decentralized crypto trading protocol. The Uniswap protocol is a peer-to-peer system designed for exchanging cryptocurrencies (ERC-20 Tokens) on the Ethereum blockchain. The marketplace is open and accessible to all and anyone can build applications leveraging token swaps, oracles, liquidity pools (LP), and more. We used Uniswap protocol to create liquidity pools for staking your assets to make accomplishments even more rewarding
 
 #### WorldCoin
 **Worldcoin** is a Privacy-Preserving Proof-of-Personhood Protocol (PPPoPP).  We used **World ID** to enable Proof-of-Personhood for our sign-up process.
