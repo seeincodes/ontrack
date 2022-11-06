@@ -6,11 +6,11 @@ Big problem we face nowadays is that people can say anything and never deliver o
 ## Vision
  **onTrack** - an incentivized accountability platform where you can set up your goals, invite others to participate in the same challenge, and keep each other accountable to deliver on your promises. 
 We want to help keep you and your friends motivated in achieving your goals. The platform is user-friendly and backed by the DeFi staking protocol. Our aim is to empower you to take control of your accomplishments while having the support and inspiration from your buddies.
-### A cherry on top: 
-Your money is working for you while you are working towards your goals. The amount staked by all parties goes into a liquidity pool and at the end of the challenge, winners get a yielded amount. 
 
 ## How does it work
 You decide on the commitment you want to make, how often you want to take the steps towards it, invite your buddies and keep on delivering on your promises
+### A cherry on top: 
+Your money is working for you while you are working towards your goals. The amount staked by all parties goes into a liquidity pool and at the end of the challenge, winners get a yielded amount. 
 
 
 ## Ecosystem Bounties & Sponsor Prizes
@@ -24,11 +24,11 @@ For our applications process, we are deploying our smart contracts on Polygon as
 
 #### Optimism
 **Optimism** We wanted to make our platform multichain, and at onTrack we are super optimistic about open source contributions and builders communities.
-https://optimistic.etherscan.io/address/0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8
+Optimism deployment of contract on goerli (https://goerli.etherscan.io/tx/0x5a7b2fa454597d7253d4432c849f12d8c4eb3eb9752820b21d1ae68a0f0d1719)
 
 #### Gnosis Chain
-**Gnosis Chain** We have deployed smart contract on Gnosis Chain to allow our users a multichain experience.
-https://gnosisscan.io/address/0xd9145cce52d386f254917e481eb44e9943f39138
+**Gnosis Chain** We have deployed smart contract on Gnosis Chain to allow our users multichain experiance as the transactions are cheaper. As Gnosis chain can only be deployed on testnet here is a hash address for gnosis chiado contract 0x684f05d2208b10b25da1875b6feeadca82a7e6b09a7f4c2369e39a1e818be11f
+
 
 #### ApeCoin
 **ApeCoin** is an ERC-20 governance and utility token for decentralized communities building at the forefront of culture and web3. We have adopted ApeCoin as a staking token for our application  to give our users all the perks for ApeCoin holders.
@@ -38,7 +38,7 @@ https://gnosisscan.io/address/0xd9145cce52d386f254917e481eb44e9943f39138
 - Incentivization - tool for third-party developers to incorporate APE into their services, games, and other projects
 
 #### 0x Protocol
-*0x Protocol* an open-source, decentralized exchange protocol that serves as the global backbone of 0x, trusted exchange infrastructure for the internet. 
+**0x Protocol** an open-source, decentralized exchange protocol that serves as the global backbone of 0x, trusted exchange infrastructure for the internet. 
 We have used **0x Swap API**  to convert ApeCoin which is our staking token into a Stablecoin. That allowed us to provide aggregated liquidity to our users. https://mumbai.polygonscan.com/address/0x2134ad000311c150146eed3e9149fc22d0815dba
 
 #### Uniswap Foundation
@@ -51,7 +51,7 @@ We have used **0x Swap API**  to convert ApeCoin which is our staking token int
 **Tenderly** is a leading blockchain development platform that simplifies building innovative blockchain products for seasoned and new developers alike. The company works closely with the Web 3.0 community to provide the right tools, services, and infrastructure to help developers build groundbreaking products, with less friction. We are utilizing Tenderly web application to have a seamless experience for testing our smart contracts, beacuse of their great UI.
 
 #### Triangle
-**Triangle** powers businesses to embed Web3 experiences across DeFi, NFTs, payments, social, gaming, and many more by using our wallet infrastructure API to build frictionless products and services. We used Triangle to create vaults to store crypto assets and handle dispersement for all participants.
+**Triangle** powers businesses to embed Web3 experiences across DeFi, NFTs, payments, social, gaming, and many more by using our wallet infrastructure API to build frictionless products and services. We used Triangle to create a vault to store crypto assets and handle dispersement for all participants.
 
 #### Midpoint
 **Midpoint** is the easiest way to connect your blockchain application to traditional web endpoints.
