@@ -75,8 +75,9 @@ export default function Profile() {
               <GridItem colSpan={1}>
                 <VStack alignItems="flex-start" spacing="20px">
                   <chakra.h2 fontSize="3xl" fontWeight="700">
-                    Welcome, Justina!
+                    Welcome, Kartik!
                   </chakra.h2>
+                  <p>Keep it up! You're Beyonce, always.</p>
                   <Button
                     backgroundColor="#B0CCC0"
                     size="md"
