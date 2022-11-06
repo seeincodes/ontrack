@@ -18,6 +18,7 @@ import router from "next/router";
 import buddy from "../../public/buddy.jpg";
 import graph from "../../public/graph.jpg";
 import pinkies from "../../public/pinkies.jpg";
+import accept from "../../public/accept.png";
 
 const WorldIDWidget = dynamic<WidgetProps>(
   () => import("@worldcoin/id").then((mod) => mod.WorldIDWidget),
@@ -129,25 +130,41 @@ export default function Profile() {
               templateColumns={{
                 base: "repeat(1, 1fr)",
                 sm: "repeat(2, 1fr)",
-                md: "repeat(4, 1fr)",
+                md: "repeat(2, 1fr)",
               }}
-              gap={{ base: "8", sm: "12", md: "16" }}
+              //gap={{ base: "8", sm: "12", md: "16" }}
             >
-              <img
+              <div
                 style={{
-                  height: "8em",
-
-                  borderRadius: "100%",
+                  position: "relative",
+                  display: "flex",
+                  flexDirection: "row",
                 }}
-                src={buddy.src}
-              />
+              >
+                <img
+                  style={{
+                    height: "8em",
+                    borderRadius: "100%",
+                  }}
+                  src={buddy.src}
+                />
+                <img
+                  style={{
+                    height: "8em",
+                    borderRadius: "100%",
+                  }}
+                  src={pinkies.src}
+                />
+              </div>
               <img
+                src={accept.src}
                 style={{
-                  height: "8em",
-
-                  borderRadius: "100%",
+                  position: "absolute",
+                  right: "0px",
+                  bottom: "0px",
+                  width: "500px",
+                  marginRight: "-105px",
                 }}
-                src={pinkies.src}
               />
             </Grid>
           </Box>
