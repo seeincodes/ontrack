@@ -1,9 +1,7 @@
 import Triangle from "triangle";
 
 export default async function Vault() {
-  const triangle = new Triangle(
-    process.env.NEXT_PUBLIC_TRIANGLE_KEY as string
-  );
+  const triangle = new Triangle(process.env.NEXT_PUBLIC_TRIANGLE_KEY as string);
 
   const vault = await triangle.vaults.create({
     name: "Ontrack Wallet",

@@ -35,9 +35,9 @@ export default function Hero() {
           </Text>
         </Heading>
         <Text color={"gray.500"} maxW={"3xl"} fontFamily="'Mina', sans-serif">
-          onTrack is an incentive accountability app that can you and your
+          onTrack is an incentive accountability app that will help you and your
           friends reach your goals! <br />
-          our simple platform empowers your goal setting by rewarding you for
+          Our simple platform empowers your goal setting by rewarding you for
           completion.
         </Text>
         <Flex w={"full"}>

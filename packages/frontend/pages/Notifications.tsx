@@ -12,19 +12,9 @@ export const Web3Context = createContext({});
 
 export const EnvContext = createContext({});
 
-function useWeb3React(): {
-  chainId: any;
-  account: any;
-  active: any;
-  error: any;
-  library: any;
-} {
-  throw new Error("Function not implemented.");
-}
+//const { chainId, account, active, error, library } = useWeb3React();
 
-const { chainId, account, active, error, library } = useWeb3React();
-
-const NotificationsTest = () => {
+export default function Notifications() {
   const { account, chainId } = useContext<any>(Web3Context);
   const { env, isCAIP } = useContext<any>(EnvContext);
   const [isLoading, setLoading] = useState(false);
@@ -52,7 +42,7 @@ const NotificationsTest = () => {
   }, [account, env, isCAIP]);
 
   const notifications = PushAPI.user.getFeeds({
-    user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681", // user address in CAIP
+    user: "eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681",
     env: "staging",
   });
 
@@ -99,4 +89,13 @@ const NotificationsTest = () => {
       ) : null}
     </div>
   );
-};
+}
+// function useWeb3React(): {
+//   chainId: any;
+//   account: any;
+//   active: any;
+//   error: any;
+//   library: any;
+// } {
+//   throw new Error("Function not implemented.");
+// }

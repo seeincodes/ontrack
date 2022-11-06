@@ -56,16 +56,6 @@ export function getFallbackETHCAIPAddress(env: string, address: string) {
   return `eip155:${chainId}:${address}`;
 }
 
-/**
- * This helper
- *  checks if a VALID CAIP
- *    return the CAIP
- *  else
- *    check if valid ETH
- *      return a CAIP representation of that address (EIP155 + env)
- *    else
- *      throw error!
- */
 export function getCAIPAddress(env: string, address: string, msg?: string) {
   if (validateCAIP(address)) {
     return address;
