@@ -2,7 +2,7 @@ import Triangle from "triangle";
 
 export default async function Vault() {
   const triangle = new Triangle(
-    "secret_OcyHR2qA1zufKSIQwCfXxGTmu3qwk08SOaWxY6EaDc"
+    ""
   );
 
   const vault = await triangle.vaults.create({
