@@ -1,6 +1,8 @@
 # onTrack
-## Problem
+## Incentivized Staking Protocol
+## ontrack-frontend.vercel.app
 
+## Problem
 Big problem we face nowadays is that people can say anything and never deliver on their promises. Have you ever been told to expect something that has never happened? How many times you yourself have tried to stay on track with your goals, making a New Years’ resolution list or promising to start every Monday?  We came up with the solution to keep you and your peers accountable and put the money where the mouth is. 
 
 ## Vision
