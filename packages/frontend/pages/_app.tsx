@@ -19,7 +19,7 @@ import {
 import { useIsMounted } from "../hooks";
 
 // Get environment variables
-const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID as string;
+const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID;
 // const infuraId = process.env.NEXT_PUBLIC_INFURA_ID as string;
 
 const hardhatChain: Chain = {
