@@ -1,5 +1,5 @@
 # onTrack
-### Incentivized Staking Protocol
+### Incentivized Staking Platform
 ### https://ontrack-frontend.vercel.app
 
 ## Problem
