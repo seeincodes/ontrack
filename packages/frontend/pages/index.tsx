@@ -29,10 +29,7 @@ export default function Home() {
         }}
       >
         {isConnected ? (
-          <>
-            <SidebarWithHeader />
-            <Profile />
-          </>
+          <SidebarWithHeader />
         ) : (
           <>
             <Navbar />

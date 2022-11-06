@@ -22,6 +22,7 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import router from "next/router";
+import Vault from "../../pages/vault/vault";
 
 import { useToast } from "@chakra-ui/react";
 
@@ -182,6 +183,7 @@ export default function Multistep() {
       isClosable: true,
     });
     router.push("/");
+    Vault();
   };
   return (
     <>

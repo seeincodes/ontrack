@@ -1,38 +1,31 @@
 import Triangle from "triangle";
 
-function Vault() {
-    const triangle = new Triangle(process.env.TRIANGLE_KEY);
+export default async function Vault() {
+  const triangle = new Triangle(
+    "secret_OcyHR2qA1zufKSIQwCfXxGTmu3qwk08SOaWxY6EaDc"
+  );
 
-    const vault = await triangle.vaults.create({
-        name: "Ontrack Wallet",
-    });
+  const vault = await triangle.vaults.create({
+    name: "Ontrack Wallet",
+  });
 
-    const ethereumWallet = await triangle.wallets.create({
-        name: vault.name,
-        network: "ethereum_goerli",
-        vault: vault.id,
-    });
+  const ethereumWallet = await triangle.wallets.create({
+    name: vault.name,
+    network: "ethereum_goerli",
+    vault: vault.id,
+  });
 
-    const polygonWallet = await triangle.wallets.create({
-        name: vault.name,
-        network: "polygon_mumbai",
-        vault: vault.id,
-    });
+  const polygonWallet = await triangle.wallets.create({
+    name: vault.name,
+    network: "polygon_mumbai",
+    vault: vault.id,
+  });
 
-    const optimismWallet = await triangle.wallets.create({
-        name: vault.name,
-        network: "optimism_goerli",
-        vault: vault.id,
-    });
+  const optimismWallet = await triangle.wallets.create({
+    name: vault.name,
+    network: "optimism_goerli",
+    vault: vault.id,
+  });
 
-    const vaults = await triangle.vaults.list();
-
-
-    return (
-        <div>Vault < /div>
-        div
-
-    )
+  const vaults = await triangle.vaults.list();
 }
-
-export default Vault;
